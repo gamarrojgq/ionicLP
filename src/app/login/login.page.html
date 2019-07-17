@@ -1,0 +1,51 @@
+<ion-content>
+  <p class="version">Versión 1.0</p>
+  <div class="banrural-contenido">
+    <div class="container"></div>
+      <img class="logo" src="assets/img/logo.svg" >
+
+      <br>
+
+      <ion-list style="background-color: transparent">
+        <ion-item>
+          <ion-icon item-left name="inicio_usuario"></ion-icon>
+          <ion-input [(ngModel)]="usuario.model"
+                      type="text" (input)="validar(usuario)" placeholder="Usuario" maxlength="22">
+          </ion-input>
+        </ion-item>
+        
+        <br>
+
+        <ion-item>
+          <ion-icon item-left name="bv_candado"></ion-icon>
+          <ion-input
+            *ngIf="mostrar_password"
+            [(ngModel)]="password"
+            [type]="'text'"
+            placeholder="Contraseña"
+            maxlength="64"
+            #inputPassText
+            >
+          </ion-input>
+          <ion-input
+            *ngIf="!mostrar_password"
+            [(ngModel)]="password"
+            [type]="'password'"
+            placeholder="Contraseña"
+            maxlength="64"
+            clearOnEdit="false"
+            #inputPass
+          >
+          </ion-input>          
+        </ion-item>
+
+        <br>
+        
+        <ion-button (click)="login()" shape="round">Login</ion-button>
+      </ion-list>
+  </div>
+</ion-content>
+
+
+
+

@@ -4,3 +4,36 @@
 // styles are for the entire app and not just one component. Additionally, this 
 // file can hold Sass mixins, functions, and placeholder classes to be imported 
 // and used throughout the application.
+
+.version {
+    color: red;
+    width: 100%;
+    text-align: right;
+    font-size: xx-small;
+    padding-right: 16px;
+  }
+
+.banrural-contenido {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.container {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+.logo {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
